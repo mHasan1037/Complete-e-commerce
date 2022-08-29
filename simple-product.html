@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="simple-product.css">
+    <link rel="stylesheet" href="headercss.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Simple Product</title>
+</head>
+<body>
+    <my-header></my-header>
+    <div class="product-container">
+        <div class="home-link"><a href="index.html">Home</a> 
+           <i class="fa-solid fa-angle-right" style="font-size: 14px; color: gray;"></i> 
+           <a href="index.html">Product</a>
+           <i class="fa-solid fa-angle-right" style="font-size: 14px; color: gray;"></i>
+           <span style="color: var(--background-color)">Pellentesque posuere</span>
+        </div> 
+
+        <div class="simple-product-container">
+            <div class="simple-picture-part">
+                <div class="small-img">
+                    <img class="active" src="photos/pexels-alexandra-maria-336372.jpg">
+                    <img src="photos/pexels-andrea-piacquadio-845434.jpg">
+                    <img src="photos/pexels-anna-nekrashevich-8532616.jpg">
+                    <img src="photos/pexels-godisable-jacob-932401.jpg">
+                 </div>
+                 <div class="bg-img" id="magnifying_area">
+                   <img id="magnifying_img" src="photos/pexels-alexandra-maria-336372.jpg">
+                 </div>
+            </div>
+            <div class="simple-product-desc">
+                <h1 class="simple-headline">Pellentesque posuere</h1>
+                <div class="average-ratings">
+                    <i class="fa-solid fa-star yellow-average"></i>
+                    <i class="fa-solid fa-star yellow-average"></i>
+                    <i class="fa-solid fa-star yellow-average"></i>
+                    <i class="fa-solid fa-star yellow-average"></i>
+                    <i class="fa-solid fa-star yellow-average"></i>
+                    <a href="">(1 customer review)</a>
+                </div>
+                <h1 class="simple-headline">$52.00</h1>
+                <li class="lis">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</li>
+                <li class="lis">Consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+                <li class="lis">Suspendisse ultrices mauris diam</li>
+                <p class="lis">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                    labore et dolore magna aliquyam erat
+                </p>
+                <P style="color: var(--orange-color); margin-top: 5px; font-size: 18px; font-weight: bold;">Available on backorder</P>
+                <button class="simple-pdt-btn">Add To Cart</button>
+                <div class="wish-compare">
+                    <a href=""><i class="fa-solid fa-heart"></i> Wishlist</a>
+                    <a href=""><i class="fa-solid fa-code-compare"></i> Compare</a>
+                </div>
+                <hr style="border: 1px solid rgb(238, 238, 238);">
+                <div class="sku" style="margin: 20px 0;">
+                    <p>SKU: <span>&nbsp; WVN-13</span></p>
+                    <p>Categories: <a href="">&nbsp; Accessories</a>, <a href="">Backpack</a></p>
+                    <p>Tags: <a href="">&nbsp; Tag-02</a>, <a href="">Tag-08</a></p>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="simple-headline">Frequently Bought Together</h1>
+        <hr>
+        <div class="bought-together">
+            <div class="plus">
+                <div class="plus-iner">
+                    <a href=""><img src="photos/pexels-evg-kowalievska-1055691.jpg"></a> 
+                    <span style="color: var(--ash-color)">+</span>
+                    <a href=""><img src="photos/dom-hill-nimElTcTNyY-unsplash.jpg"></a> 
+                </div> 
+                <div class="simple-add-cart">
+                    <p style="color: var(--ash-color)">Price for all: &nbsp;<span style="color: var(--orange-color)">$77.00</span></p>
+                    <button>Add All To Cart</button>
+                </div>
+            </div>
+            <div style="margin: 15px 0;">
+                <li class="lis">This Product: Pellentesque posuere - <span style="color: var(--orange-color);">$52.00</span></li>
+                <li class="lis">Checked Wool Blend Mini Skirt - <span style="color: rgb(192, 191, 191);">$29.00</span> <span style="color: var(--orange-color);">$25.00</span></li>
+            </div>
+        </div>
+
+
+
+        <div class="desc-review-container">
+            <div class="desc-review-titles">
+                <ul class="simple-desc-rev">
+                    <li><a href="#/" class="active">Description</a></li>
+                    <li><a href="#/">Reviews(1)</a></li>
+                    <li><a href="#/">About Brands</a></li>
+                    <li><a href="#/">Shipping & Delivery</a></li>
+                </ul>
+            </div>
+            <div class="all-simple-desc-container">
+                <div class="simple-disc-container  active">
+                    <p class="simple-desc-para">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique
+                        auctor. Ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. 
+                        Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in accumsan elit odio quis mi.
+                    </p>
+                    <h2 style="margin: 25px 0">Description Heading 01</h2>
+                    <p class="simple-desc-para">
+                        Cras neque metus, consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in 
+                        imperdiet ligula euismod eget. Pellentesque habitant morbi tristique senectus et netus et 
+                        malesuada fames ac turpis egestas. Nam erat mi, rutrum at sollicitudin rhoncus, ultricies 
+                        posuere erat. Duis convallis, arcu nec aliquam consequat, purus felis vehicula felis, a 
+                        dapibus enim lorem nec augue. Nunc facilisis sagittis ullamcorper.
+                    </p>
+                    <div style="margin: 20px 0">
+                        <li class="lis">Attribute Sets for quick product creation of different item types</li>
+                        <li class="lis">Approve, Edit and Delete Product Reviews and Tags</li>
+                        <li class="lis">Media Manager with automatic image resizing and watermarking</li>
+                        <li class="lis">Search Results rewrites and redirects</li>
+                        <li class="lis">Batch Import and Export of catalog</li>
+                        <li class="lis">Batch Updates to products in admin panel</li>
+                    </div>
+                    <p class="simple-desc-para">
+                        Cras neque metus, consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in 
+                        imperdiet ligula euismod eget. Pellentesque habitant morbi tristique senectus et netus et 
+                        malesuada fames ac turpis egestas. Nam erat mi, rutrum at sollicitudin rhoncus, ultricies 
+                        posuere erat. Duis convallis, arcu nec aliquam consequat, purus felis vehicula felis, a 
+                        dapibus enim lorem nec augue. Nunc facilisis sagittis ullamcorper.
+                    </p>
+                </div>
+                <div class="simple-disc-container">
+                      <div class="peter-giroud-container">
+                            <div class="peter-giroud">
+                                <i class="fa-solid fa-user"></i>
+                                <div>
+                                    <p style="color: var(--ash-color)"><span style="color: var(--background-color); font-weight: bold; font-size: 17px;">Peter Giround</span> - September 17, 2019</p>
+                                    <p style="color: var(--ash-color); margin: 5px 0;">Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est</p>
+                                </div>
+                            </div>
+                            <div class="average-ratings">
+                                <i class="fa-solid fa-star yellow-average"></i>
+                                <i class="fa-solid fa-star yellow-average"></i>
+                                <i class="fa-solid fa-star yellow-average"></i>
+                                <i class="fa-solid fa-star yellow-average"></i>
+                                <i class="fa-solid fa-star yellow-average"></i>
+                            </div>
+                      </div>
+                      <hr>
+                      <div style="margin: 20px 0">
+                        <p style="color: var(--background-color); font-weight: bold; font-size: 17px; line-height: 25px;">Add a review</p>
+                        <p class="required-star" style="color: var(--ash-color);">Your email address will not be published. Required fields are marked</p>
+                      </div>
+                      <div style="margin: 20px 0">
+                        <p class="required-star" style="color: var(--ash-color); font-size: 17px;">Your rating</p>
+                        <div style="margin: 5px 0;" class="simple-your-rating">
+                            <span style="margin-left: 0;"><i class="fa-solid fa-star"></i></span> |
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span> |
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span> |
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span> |
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span> |
+                        </div>
+                      </div>
+                      <div>
+                          <p class="required-star" style="color: var(--ash-color); font-size: 17px; margin: 10px 0;">Your review</p><br>
+                          <textarea class="simple-textarea"></textarea>
+                          <form class="simple-form">
+                            <div style="width: 100%; display: flex; justify-content: space-between;">
+                                <div class="simple-input">
+                                    <label class="required-star" for="fname">First name</label><br>
+                                    <input type="text" id="fname" name="fname"><br>
+                                </div>
+                                <div class="simple-input">
+                                    <label class="required-star" for="lname">Last name</label><br>
+                                    <input type="text" id="lname" name="lname"><br><br>
+                                </div>
+                            </div>
+                            <div style="width: 100%;">
+                                <input type="checkbox">
+                                <p style="color: var(--ash-color); margin: 5px 0;  font-size: 17px;">Save my name, email and website in this browser for the next time I comment.</p>
+                                <p style="margin: 30px 0 20px; color: var(--ash-color); font-size: 17px;">Please enter an aswer in degits: </p>
+                            </div>
+                            <div>
+                                <span id="simple-first"></span>
+                                <span id="simple-assign"></span>
+                                <span id="simple-last"></span>
+                                <span style="margin: 0 5px; font-weight: bold; font-size: 18px;">=</span>
+                                <input type="text" class="math-box">
+                            </div>
+
+                            <button type="submit" class="simple-submit">Submit</button>
+                          </form>
+                          
+                      </div>
+                </div>
+                <div class="simple-disc-container">
+                   <div class="simple-brands">
+                         <p>
+                            Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                         </p>
+                         <h3>Morbi sed sapien velit tincidunt, libero non semper vulputate</h3>
+                         <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <h3>Sed tincidunt, libero non semper vulputate, mauris</h3>
+                        <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                   </div> 
+                </div>
+                <div class="simple-disc-container">
+                    <div class="shipping-delivery">
+                        <p>
+                            Aliquam a tortor vel ligula auctor laoreet. Nullam dignissim, arcu a tristique 
+                            dictum, felis diam convallis nunc, nec gravida tortor erat non lectus. Fusce odio erat, dapibus sit amet 
+                            suscipit quis, ultricies nec lectus. Nulla a nunc posuere, facilisis metus ac, pulvinar urna. Curabitur iaculis 
+                            mi imperdiet, pellentesque odio ac, vehicula lacus.
+                        </p>
+                        <p>
+                            Aenean finibus nunc vitae lacus mollis tincidunt. In vitae rhoncus felis. Fusce convallis erat eget orci placerat, 
+                            vitae porta odio faucibus. Mauris lorem felis, lobortis ac condimentum finibus, luctus eget ligula. Sed placerat 
+                            dui nulla, in condimentum dui mollis pretium. Suspendisse semper turpis nec tempus gravida. Aenean a erat orci. 
+                            Aliquam semper diam nec maximus cursus.
+                        </p>
+                        <h2 style="color: gray;">
+                            General Shipping Policies
+                        </h2>
+                        <p>
+                            Pellentesque ut purus ullamcorper, porttitor lectus vitae, vehicula nulla. Aenean vestibulum efficitur neque eu 
+                            fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer placerat 
+                            ultrices odio sed tempus. In scelerisque mattis neque, ac porttitor magna egestas eu. Nulla massa augue, placerat non 
+                            egestas sit amet, faucibus ac est. Curabitur id urna lacus. Ut suscipit non nisl sit amet suscipit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="simple-social">
+                    <div><a href=""><i class="fa-brands fa-facebook"></i> <span>Share on Facebook</span></a></div>
+                    <div><a href=""><i class="fa-brands fa-twitter"></i> <span>Tweet This Product</span></a></div>
+                    <div><a href=""><i class="fa-brands fa-pinterest"></i> <span>Pin This Product</span></a></div>
+                    <div><a href=""><i class="fa-solid fa-at"></i> <span>Mail This Product</span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <h1 style="margin: 100px auto 15px; font-size: 40px; color: var(--background-color)">Related Products</h1>
+        <div class="simple-related">
+            <div class="new-arrival-content">
+                <div class="new-arrival-img-container">
+                    <img src="photos/shirt-png-23759.png" alt="">
+                    <div class="new-arrival-icons quickview">
+                        <svg class="quickview-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.6 160.4C282.4 160.1 285.2 160 288 160C341 160 384 202.1 384 256C384 309 341 352 288 352C234.1 352 192 309 192 256C192 253.2 192.1 250.4 192.4 247.6C201.7 252.1 212.5 256 224 256C259.3 256 288 227.3 288 192C288 180.5 284.1 169.7 279.6 160.4zM480.6 112.6C527.4 156 558.7 207.1 573.5 243.7C576.8 251.6 576.8 260.4 573.5 268.3C558.7 304 527.4 355.1 480.6 399.4C433.5 443.2 368.8 480 288 480C207.2 480 142.5 443.2 95.42 399.4C48.62 355.1 17.34 304 2.461 268.3C-.8205 260.4-.8205 251.6 2.461 243.7C17.34 207.1 48.62 156 95.42 112.6C142.5 68.84 207.2 32 288 32C368.8 32 433.5 68.84 480.6 112.6V112.6zM288 112C208.5 112 144 176.5 144 256C144 335.5 208.5 400 288 400C367.5 400 432 335.5 432 256C432 176.5 367.5 112 288 112z"/></svg>
+                        <small class="new-arrival-quick-text">Quick View</small>
+                    </div>
+                    <div class="new-arrival-two wishlist">
+                        <svg class="quickview-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/></svg>
+                        <small class="new-arrival-quick-text">Wishlist</small>
+                    </div>
+                    <div class="new-arrival-three compare">
+                        <svg class="quickview-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M320 488C320 497.5 314.4 506.1 305.8 509.9C297.1 513.8 286.1 512.2 279.9 505.8L199.9 433.8C194.9 429.3 192 422.8 192 416C192 409.2 194.9 402.7 199.9 398.2L279.9 326.2C286.1 319.8 297.1 318.2 305.8 322.1C314.4 325.9 320 334.5 320 344V384H336C371.3 384 400 355.3 400 320V153.3C371.7 140.1 352 112.8 352 80C352 35.82 387.8 0 432 0C476.2 0 512 35.82 512 80C512 112.8 492.3 140.1 464 153.3V320C464 390.7 406.7 448 336 448H320V488zM456 79.1C456 66.74 445.3 55.1 432 55.1C418.7 55.1 408 66.74 408 79.1C408 93.25 418.7 103.1 432 103.1C445.3 103.1 456 93.25 456 79.1zM192 24C192 14.52 197.6 5.932 206.2 2.076C214.9-1.78 225-.1789 232.1 6.161L312.1 78.16C317.1 82.71 320 89.2 320 96C320 102.8 317.1 109.3 312.1 113.8L232.1 185.8C225 192.2 214.9 193.8 206.2 189.9C197.6 186.1 192 177.5 192 168V128H176C140.7 128 112 156.7 112 192V358.7C140.3 371 160 399.2 160 432C160 476.2 124.2 512 80 512C35.82 512 0 476.2 0 432C0 399.2 19.75 371 48 358.7V192C48 121.3 105.3 64 176 64H192V24zM56 432C56 445.3 66.75 456 80 456C93.25 456 104 445.3 104 432C104 418.7 93.25 408 80 408C66.75 408 56 418.7 56 432z"/></svg>
+                        <small class="new-arrival-quick-text">Compare</small>
+                    </div>
+                </div>
+                <div class="new-arrival-starts">
+                    &#9733;  &#9733;  &#9733;  &#9733;  &#9733;
+                </div>
+                <a href="" class="new-arrival-detail-link">Black T-Shirt</a>
+                <div class="new-arrival-price">
+                    <div class="new-arrival-contant">
+                     <p>$58.00</p>
+                     <a href="" class="new-arrival-contant-link"><svg class="new-arrival-add-cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M112 112C112 50.14 162.1 0 224 0C285.9 0 336 50.14 336 112V160H400C426.5 160 448 181.5 448 208V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V208C0 181.5 21.49 160 48 160H112V112zM160 160H288V112C288 76.65 259.3 48 224 48C188.7 48 160 76.65 160 112V160zM136 256C149.3 256 160 245.3 160 232C160 218.7 149.3 208 136 208C122.7 208 112 218.7 112 232C112 245.3 122.7 256 136 256zM312 208C298.7 208 288 218.7 288 232C288 245.3 298.7 256 312 256C325.3 256 336 245.3 336 232C336 218.7 325.3 208 312 208z"/></svg>Add to cart</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="new-arrival-content">
+                <div class="new-arrival-img-container">
+                    <img src="photos/580b57fbd9996e24bc43bed9.png" alt="">
+                    <p>SALE!</p>
+                    <div class="new-arrival-icons quickview">
+                        <svg class="quickview-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.6 160.4C282.4 160.1 285.2 160 288 160C341 160 384 202.1 384 256C384 309 341 352 288 352C234.1 352 192 309 192 256C192 253.2 192.1 250.4 192.4 247.6C201.7 252.1 212.5 256 224 256C259.3 256 288 227.3 288 192C288 180.5 284.1 169.7 279.6 160.4zM480.6 112.6C527.4 156 558.7 207.1 573.5 243.7C576.8 251.6 576.8 260.4 573.5 268.3C558.7 304 527.4 355.1 480.6 399.4C433.5 443.2 368.8 480 288 480C207.2 480 142.5 443.2 95.42 399.4C48.62 355.1 17.34 304 2.461 268.3C-.8205 260.4-.8205 251.6 2.461 243.7C17.34 207.1 48.62 156 95.42 112.6C142.5 68.84 207.2 32 288 32C368.8 32 433.5 68.84 480.6 112.6V112.6zM288 112C208.5 112 144 176.5 144 256C144 335.5 208.5 400 288 400C367.5 400 432 335.5 432 256C432 176.5 367.5 112 288 112z"/></svg>
+                        <small class="new-arrival-quick-text">Quick View</small>
+                    </div>
+                    <div class="new-arrival-two wishlist">
+                        <svg class="quickview-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/></svg>
+                        <small class="new-arrival-quick-text">Wishlist</small>
+                    </div>
+                    <div class="new-arrival-three compare">
+                        <svg class="quickview-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M320 488C320 497.5 314.4 506.1 305.8 509.9C297.1 513.8 286.1 512.2 279.9 505.8L199.9 433.8C194.9 429.3 192 422.8 192 416C192 409.2 194.9 402.7 199.9 398.2L279.9 326.2C286.1 319.8 297.1 318.2 305.8 322.1C314.4 325.9 320 334.5 320 344V384H336C371.3 384 400 355.3 400 320V153.3C371.7 140.1 352 112.8 352 80C352 35.82 387.8 0 432 0C476.2 0 512 35.82 512 80C512 112.8 492.3 140.1 464 153.3V320C464 390.7 406.7 448 336 448H320V488zM456 79.1C456 66.74 445.3 55.1 432 55.1C418.7 55.1 408 66.74 408 79.1C408 93.25 418.7 103.1 432 103.1C445.3 103.1 456 93.25 456 79.1zM192 24C192 14.52 197.6 5.932 206.2 2.076C214.9-1.78 225-.1789 232.1 6.161L312.1 78.16C317.1 82.71 320 89.2 320 96C320 102.8 317.1 109.3 312.1 113.8L232.1 185.8C225 192.2 214.9 193.8 206.2 189.9C197.6 186.1 192 177.5 192 168V128H176C140.7 128 112 156.7 112 192V358.7C140.3 371 160 399.2 160 432C160 476.2 124.2 512 80 512C35.82 512 0 476.2 0 432C0 399.2 19.75 371 48 358.7V192C48 121.3 105.3 64 176 64H192V24zM56 432C56 445.3 66.75 456 80 456C93.25 456 104 445.3 104 432C104 418.7 93.25 408 80 408C66.75 408 56 418.7 56 432z"/></svg>
+                        <small class="new-arrival-quick-text">Compare</small>
+                    </div>
+                </div>
+                <div class="new-arrival-starts black">
+                    &#9733;  &#9733;  &#9733;  &#9733;  &#9733;
+                </div>
+                <a href="" class="new-arrival-detail-link">Olivine - Suede Boots</a>
+                <div class="new-arrival-price">
+                      <div class="new-arrival-contant">
+                        <p><span class="new-arrival-discounted">$70.00</span><span class="new-arrival-new-price">$55.00</span></p>
+                        <a href="" class="new-arrival-contant-link"><svg class="new-arrival-add-cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M112 112C112 50.14 162.1 0 224 0C285.9 0 336 50.14 336 112V160H400C426.5 160 448 181.5 448 208V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V208C0 181.5 21.49 160 48 160H112V112zM160 160H288V112C288 76.65 259.3 48 224 48C188.7 48 160 76.65 160 112V160zM136 256C149.3 256 160 245.3 160 232C160 218.7 149.3 208 136 208C122.7 208 112 218.7 112 232C112 245.3 122.7 256 136 256zM312 208C298.7 208 288 218.7 288 232C288 245.3 298.7 256 312 256C325.3 256 336 245.3 336 232C336 218.7 325.3 208 312 208z"/></svg>Add to cart</a>
+                       </div>
+                </div>
+            </div>
+    
+            <div class="new-arrival-content">
+                <div class="new-arrival-img-container">
+                    <img src="photos/kindpng_229818.png" alt="">
+                    <div class="new-arrival-icons quickview">
+                        <svg class="quickview-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.6 160.4C282.4 160.1 285.2 160 288 160C341 160 384 202.1 384 256C384 309 341 352 288 352C234.1 352 192 309 192 256C192 253.2 192.1 250.4 192.4 247.6C201.7 252.1 212.5 256 224 256C259.3 256 288 227.3 288 192C288 180.5 284.1 169.7 279.6 160.4zM480.6 112.6C527.4 156 558.7 207.1 573.5 243.7C576.8 251.6 576.8 260.4 573.5 268.3C558.7 304 527.4 355.1 480.6 399.4C433.5 443.2 368.8 480 288 480C207.2 480 142.5 443.2 95.42 399.4C48.62 355.1 17.34 304 2.461 268.3C-.8205 260.4-.8205 251.6 2.461 243.7C17.34 207.1 48.62 156 95.42 112.6C142.5 68.84 207.2 32 288 32C368.8 32 433.5 68.84 480.6 112.6V112.6zM288 112C208.5 112 144 176.5 144 256C144 335.5 208.5 400 288 400C367.5 400 432 335.5 432 256C432 176.5 367.5 112 288 112z"/></svg>
+                        <small class="new-arrival-quick-text">Quick View</small>
+                    </div>
+                    <div class="new-arrival-two wishlist">
+                        <svg class="quickview-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/></svg>
+                        <small class="new-arrival-quick-text">Wishlist</small>
+                    </div>
+                    <div class="new-arrival-three compare">
+                        <svg class="quickview-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M320 488C320 497.5 314.4 506.1 305.8 509.9C297.1 513.8 286.1 512.2 279.9 505.8L199.9 433.8C194.9 429.3 192 422.8 192 416C192 409.2 194.9 402.7 199.9 398.2L279.9 326.2C286.1 319.8 297.1 318.2 305.8 322.1C314.4 325.9 320 334.5 320 344V384H336C371.3 384 400 355.3 400 320V153.3C371.7 140.1 352 112.8 352 80C352 35.82 387.8 0 432 0C476.2 0 512 35.82 512 80C512 112.8 492.3 140.1 464 153.3V320C464 390.7 406.7 448 336 448H320V488zM456 79.1C456 66.74 445.3 55.1 432 55.1C418.7 55.1 408 66.74 408 79.1C408 93.25 418.7 103.1 432 103.1C445.3 103.1 456 93.25 456 79.1zM192 24C192 14.52 197.6 5.932 206.2 2.076C214.9-1.78 225-.1789 232.1 6.161L312.1 78.16C317.1 82.71 320 89.2 320 96C320 102.8 317.1 109.3 312.1 113.8L232.1 185.8C225 192.2 214.9 193.8 206.2 189.9C197.6 186.1 192 177.5 192 168V128H176C140.7 128 112 156.7 112 192V358.7C140.3 371 160 399.2 160 432C160 476.2 124.2 512 80 512C35.82 512 0 476.2 0 432C0 399.2 19.75 371 48 358.7V192C48 121.3 105.3 64 176 64H192V24zM56 432C56 445.3 66.75 456 80 456C93.25 456 104 445.3 104 432C104 418.7 93.25 408 80 408C66.75 408 56 418.7 56 432z"/></svg>
+                        <small class="new-arrival-quick-text">Compare</small>
+                    </div>
+                </div>
+                <div class="new-arrival-starts">
+                    &#9733;  &#9733;  &#9733; <span class="new-arrival-starts black"> &#9733;  &#9733;</span>
+                </div>
+                <a href="" class="new-arrival-detail-link">Wool Blend Mini Skirt</a>
+                <div class="new-arrival-price">
+                        <div class="new-arrival-contant">
+                            <p><span class="new-arrival-discounted">$75.00</span><span class="new-arrival-new-price">$69.00</span></p>
+                            <a href="" class="new-arrival-contant-link"><svg class="new-arrival-add-cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M112 112C112 50.14 162.1 0 224 0C285.9 0 336 50.14 336 112V160H400C426.5 160 448 181.5 448 208V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V208C0 181.5 21.49 160 48 160H112V112zM160 160H288V112C288 76.65 259.3 48 224 48C188.7 48 160 76.65 160 112V160zM136 256C149.3 256 160 245.3 160 232C160 218.7 149.3 208 136 208C122.7 208 112 218.7 112 232C112 245.3 122.7 256 136 256zM312 208C298.7 208 288 218.7 288 232C288 245.3 298.7 256 312 256C325.3 256 336 245.3 336 232C336 218.7 325.3 208 312 208z"/></svg>Add to cart</a>
+                        </div>
+                </div>
+            </div>
+    
+            <div class="new-arrival-content">
+                <div class="new-arrival-img-container">
+                    <img style="width: 175px; height: 230px;" src="photos/PngItem_3278962.png" alt="">
+                    <p>SALE!</p>
+                    <div class="new-arrival-icons quickview">
+                        <svg class="quickview-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.6 160.4C282.4 160.1 285.2 160 288 160C341 160 384 202.1 384 256C384 309 341 352 288 352C234.1 352 192 309 192 256C192 253.2 192.1 250.4 192.4 247.6C201.7 252.1 212.5 256 224 256C259.3 256 288 227.3 288 192C288 180.5 284.1 169.7 279.6 160.4zM480.6 112.6C527.4 156 558.7 207.1 573.5 243.7C576.8 251.6 576.8 260.4 573.5 268.3C558.7 304 527.4 355.1 480.6 399.4C433.5 443.2 368.8 480 288 480C207.2 480 142.5 443.2 95.42 399.4C48.62 355.1 17.34 304 2.461 268.3C-.8205 260.4-.8205 251.6 2.461 243.7C17.34 207.1 48.62 156 95.42 112.6C142.5 68.84 207.2 32 288 32C368.8 32 433.5 68.84 480.6 112.6V112.6zM288 112C208.5 112 144 176.5 144 256C144 335.5 208.5 400 288 400C367.5 400 432 335.5 432 256C432 176.5 367.5 112 288 112z"/></svg>
+                        <small class="new-arrival-quick-text">Quick View</small>
+                    </div>
+                    <div class="new-arrival-two wishlist">
+                        <svg class="quickview-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/></svg>
+                        <small class="new-arrival-quick-text">Wishlist</small>
+                    </div>
+                    <div class="new-arrival-three compare">
+                        <svg class="quickview-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M320 488C320 497.5 314.4 506.1 305.8 509.9C297.1 513.8 286.1 512.2 279.9 505.8L199.9 433.8C194.9 429.3 192 422.8 192 416C192 409.2 194.9 402.7 199.9 398.2L279.9 326.2C286.1 319.8 297.1 318.2 305.8 322.1C314.4 325.9 320 334.5 320 344V384H336C371.3 384 400 355.3 400 320V153.3C371.7 140.1 352 112.8 352 80C352 35.82 387.8 0 432 0C476.2 0 512 35.82 512 80C512 112.8 492.3 140.1 464 153.3V320C464 390.7 406.7 448 336 448H320V488zM456 79.1C456 66.74 445.3 55.1 432 55.1C418.7 55.1 408 66.74 408 79.1C408 93.25 418.7 103.1 432 103.1C445.3 103.1 456 93.25 456 79.1zM192 24C192 14.52 197.6 5.932 206.2 2.076C214.9-1.78 225-.1789 232.1 6.161L312.1 78.16C317.1 82.71 320 89.2 320 96C320 102.8 317.1 109.3 312.1 113.8L232.1 185.8C225 192.2 214.9 193.8 206.2 189.9C197.6 186.1 192 177.5 192 168V128H176C140.7 128 112 156.7 112 192V358.7C140.3 371 160 399.2 160 432C160 476.2 124.2 512 80 512C35.82 512 0 476.2 0 432C0 399.2 19.75 371 48 358.7V192C48 121.3 105.3 64 176 64H192V24zM56 432C56 445.3 66.75 456 80 456C93.25 456 104 445.3 104 432C104 418.7 93.25 408 80 408C66.75 408 56 418.7 56 432z"/></svg>
+                        <small class="new-arrival-quick-text">Compare</small>
+                    </div>
+                </div>
+                <div class="new-arrival-starts">
+                    &#9733;  &#9733;  &#9733; &#9733;  <span class="new-arrival-starts black">&#9733;</span>
+                </div>
+                <a href="" class="new-arrival-detail-link">Sports Jersey</a>
+                <div class="new-arrival-price">
+                    <div class="new-arrival-contant">
+                        <p><span class="new-arrival-discounted">$62.00</span><span class="new-arrival-new-price">$52.00</span></p>
+                        <a href="" class="new-arrival-contant-link"><svg class="new-arrival-add-cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M112 112C112 50.14 162.1 0 224 0C285.9 0 336 50.14 336 112V160H400C426.5 160 448 181.5 448 208V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V208C0 181.5 21.49 160 48 160H112V112zM160 160H288V112C288 76.65 259.3 48 224 48C188.7 48 160 76.65 160 112V160zM136 256C149.3 256 160 245.3 160 232C160 218.7 149.3 208 136 208C122.7 208 112 218.7 112 232C112 245.3 122.7 256 136 256zM312 208C298.7 208 288 218.7 288 232C288 245.3 298.7 256 312 256C325.3 256 336 245.3 336 232C336 218.7 325.3 208 312 208z"/></svg>Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <my-footer></my-footer>
+    <script src="simple-product.js"></script>
+    <script src="footer.js"></script>
+    <script  src="header.js"></script>
+    <script src="headerjs.js"></script>
+</body>
+</html>

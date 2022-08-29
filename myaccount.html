@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="myaccount.css">
+    <link rel="stylesheet" href="headercss.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>My Account</title>
+</head>
+<body>
+    <my-header></my-header>
+    <div class="account-container">
+        <div class="home-link"><a href="index.html">Home</a> <i class="fa-solid fa-angle-right" style="font-size: 14px;"></i> <span style="color: rgb(37, 37, 37);">My Account</span></div>
+        <div class="my-account">
+           <div class="my-acc-container">
+              <div class="login-btn">
+                <button class="active">Login</button>
+              </div>
+              <div class="my-or">
+                OR
+              </div>
+              <div class="register">
+                <button>Register</button>
+              </div>
+           </div>
+        </div>
+        <div class="form-box-main">
+                <form class="login-form active">
+                    <div class="form-box">
+                        <label>Username or email address </label><span>*</span>
+                        <input type="email" required class="form-place">
+                    </div>
+                    <div class="form-box">
+                        <label>Password </label><span>*</span>
+                        <input type="password" required class="form-place">
+                    </div>
+                    <div class="form-box">
+                        <label>Please enter an answer in digits:  </label><span>*</span>
+                        <div class="num-generator">
+                            <p id="numOne"></p>
+                            <p id="signLetter"></p>
+                            <p id="numTwo"></p> 
+                            <p>=</p> 
+                        </div>
+                        <input type="text" required class="form-place">
+                    </div>
+                    <div class="form-box">
+                        <label>Remember me</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="last-form-box">
+                        <button>LOG IN</button>
+                        <a href="">Lost your password?</a>
+                    </div>
+                </form>
+                <form class="register-form">
+                    <div class="form-box">
+                        <label>Username </label><span>*</span>
+                        <input type="email" required class="form-place">
+                    </div>
+                    <div class="form-box">
+                        <label>Email address </label><span>*</span>
+                        <input type="email" required class="form-place">
+                    </div>
+                    <div class="form-box">
+                        <label>Password </label><span>*</span>
+                        <input type="password" required class="form-place">
+                    </div>
+                    <div class="form-box">
+                        <label>Please enter an answer in digits:  </label><span>*</span>
+                        <div class="num-generator">
+                            <p id="numberOne"></p>
+                            <p id="signsLetter"></p>
+                            <p id="numberTwo"></p> 
+                            <p>=</p>
+                            <p id="resulttwo"></p> 
+                        </div>
+                        <input type="text" required class="form-place" id="register-submit">
+                    </div>
+                    <p class="register-terms">Your personal data will be used to support your experience throughout
+                         this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy</a>.</p>
+                    
+                    <button class="register-button">REGISTER</button>
+                </form>
+        </div>
+    </div>
+
+
+
+    <my-footer></my-footer>
+    <script src="footer.js"></script>
+    <script  src="header.js"></script>
+    <script src="headerjs.js"></script>
+    <script>
+        const logIn = document.querySelector('.login-btn button');
+        const register = document.querySelector('.register button');
+        const loginForm = document.querySelector('.login-form');
+        const registerForm = document.querySelector('.register-form');
+
+        logIn.addEventListener('click', ()=>{
+            logIn.classList.add('active')
+            register.classList.remove('active')
+            loginForm.classList.add('active')
+            registerForm.classList.remove('active')
+        })
+
+        register.addEventListener('click', ()=>{
+            register.classList.add('active');
+            logIn.classList.remove('active')
+            loginForm.classList.remove('active')
+            registerForm.classList.add('active')
+        })
+
+        const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+        const firstNum = number[Math.floor(Math.random() * number.length)]
+        const numOne = document.getElementById('numOne');
+        numOne.innerHTML = firstNum;
+
+
+        const sign = ["+", "-", "x", "/"]
+        const res = sign[Math.floor(Math.random() * sign.length)]
+        const signLetter = document.getElementById('signLetter')
+        signLetter.innerHTML = res;
+
+        const numTwo = document.getElementById('numTwo')
+        const secNum = number[Math.floor(Math.random() * number.length)]
+        numTwo.innerHTML = secNum;
+
+
+        const numBer = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+        const firstsNum = numBer[Math.floor(Math.random() * numBer.length)]
+        const numberOne = document.getElementById('numberOne');
+        numberOne.innerHTML = firstsNum;
+
+
+        const signs = ["+", "-", "x", "/"]
+        const ress = sign[Math.floor(Math.random() * signs.length)]
+        const signsLetter = document.getElementById('signsLetter')
+        signsLetter.innerHTML = ress;
+
+        const numberTwo = document.getElementById('numberTwo')
+        const secondNum = numBer[Math.floor(Math.random() * numBer.length)]
+        numberTwo.innerHTML = secondNum;
+
+
+        const registerSubmit = document.getElementById('register-submit');
+        const resulttwo = document.getElementById('resulttwo')
+        const registerButton = document.querySelector('.register-button')
+
+        registerButton.addEventListener('click', ()=>{
+            resulttwo.innerText = registerSubmit.value;
+            registerSubmit.value = '' 
+        })
+
+    </script>
+</body>
+</html>

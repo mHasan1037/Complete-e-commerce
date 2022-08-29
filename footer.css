@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.footer-container{
+    width: 100%;
+    margin-top: 70px;
+}
+.footer-main{
+    margin: 0 13%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-footer{
+    margin-right: 5px;
+}
+.contact-headline-container{
+    margin-top: 20px;
+}
+.contact-headline-container p{
+    line-height: 35px;
+    font-size: 17px;
+    color: var(--background-color);
+}
+.contact-headline{
+    color: var(--ash-color);
+}
+.footer-about{
+    display: flex;
+}
+.footer-sec-headline{
+    margin: 20px 0 30px;
+    font-size: 23px;
+}
+.footer-unordered li{
+    list-style-type: none;
+    transition: 0.4s;
+    width: 120px;
+}
+.footer-unordered li a{
+    color: var(--ash-color);
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.5s ease;
+    line-height: 30px;
+    display: inline-block;
+}
+.footer-unordered li a:hover{
+    color: var(--orange-color);
+    margin-left: 10px;
+}
+.footer-social-icon{
+    width: 14px;
+    height: 14px;
+    fill: var(--ash-color);
+    margin-right: 10px;
+}
+.footer-unordered li a:hover .footer-social-icon{
+    fill: var(--orange-color);
+}
+.footer-usefull-link-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-unordered{
+    margin-right: 20px;
+}
+.copyright-payment-container{
+    width: 100%;
+    margin-top: 80px;
+}
+.payment-section,
+.copyright-section{
+    padding: 40px 0;
+}
+.Copyright-payment{
+    margin: 0 13%;
+    border-top: 1px solid rgb(233, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.copyright-section p{
+    color: var(--ash-color);
+}
+.copyright-section-link{
+    text-decoration: none;
+    color: var(--background-color);
+}
+.copyright-section-link:hover{
+    color: var(--orange-color);
+}
+.payment-section a{
+    margin: 10px;
+}
+.payment-section-icon{
+    width: 40px;
+    height: 40px;
+}
+.payment-section-icon:hover{
+    fill: var(--orange-color);
+}
+
+
+
+
+

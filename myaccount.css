@@ -1,0 +1,166 @@
+.account-container{
+    margin: 60px 13%;
+}
+.home-link{
+    color: var(--background-color);
+    font-size: 18px;
+}
+.home-link a{
+    text-decoration: none;
+    color: var(--ash-color);
+}
+.home-link a:hover{
+    color: var(--orange-color);
+}
+
+.my-account{
+    margin: 50px auto;
+    display: flex;
+}
+.my-acc-container{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.login-btn button, .register button{
+    font-size: 50px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: gray;
+    transition: 0.3s ease-in;
+}
+
+.my-or{
+    margin: 0 15px;
+    color: rgb(156, 154, 154);
+    border: 2px solid gray;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.form-box-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.login-form{
+    border: 2px solid rgb(214, 212, 212);
+    padding: 30px;
+    min-width: 400px;
+    width: 40%;
+    transition: 0.3s ease;
+    display: none;
+}
+.login-btn button.active, .register button.active{
+    color: rgb(39, 36, 36);
+}
+
+.login-form.active{
+    display: block;
+}
+
+.register-form{
+    border: 2px solid rgb(214, 212, 212);
+    padding: 30px;
+    min-width: 400px;
+    width: 40%;
+    transition: 0.3s ease;
+    display: none;
+}
+.register-form.active{
+   display: block;
+}
+
+.form-box{
+    margin: 12px 20px 12px 12px;
+}
+.form-place{
+    width: 100%;
+    margin: 10px 0;
+    background-color: #F7F7F7;
+    border: 1px solid rgb(184, 187, 185);
+    font-size: 16px;
+    padding: 10px;
+}
+.form-place:focus{
+    outline: none;
+}
+.form-box label{
+    color: gray;
+    font-size: 16px;
+}
+
+.form-box span{
+    color: red;
+}
+
+.num-generator{
+    display: flex;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.num-generator * {
+    margin-right: 5px;
+}
+.last-form-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    padding: 0 15px;
+}
+
+.last-form-box button{
+    background-color: #333333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.last-form-box button:hover{
+    background-color: #FB5D5C;
+}
+
+.last-form-box a{
+    display: flex;
+    align-items: center;
+    color: rgb(43, 42, 42);
+}
+
+.register-terms{
+    margin: 15px;
+    text-align: justify;
+    color: gray;
+}
+
+.register-terms a {
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+}
+.register-terms a:hover{
+    color: #FB5D5C;
+}
+
+.register-button{
+    margin: 5px 15px;
+    width: 100%;
+    background-color: #333333;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 13px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.register-button:hover{
+    background-color: #FB5D5C;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="headercss.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Wish List</title>
+    <style>
+       .wishlist-container{
+            margin: 60px 13%;
+       }
+       .home-link{
+            color: var(--background-color);
+            font-size: 18px;
+        }
+        .home-link a{
+            text-decoration: none;
+            color: var(--ash-color);
+        }
+        .home-link a:hover{
+            color: var(--orange-color);
+        }
+        .return-shop{
+            color: white;
+            text-decoration: none;
+            background-color: #333333;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 13px;
+            transition: 0.3s ease;
+        }
+        .return-shop:hover{
+            background-color: #FB5D5C;
+        }
+    </style>
+</head>
+<body>
+    <my-header></my-header>
+    <div class="wishlist-container">
+        <div class="home-link"><a href="index.html">Home</a> <i class="fa-solid fa-angle-right" style="font-size: 14px;"></i> <span style="color: rgb(37, 37, 37);">WishList</span></div>
+
+        <h2 style="margin: 50px 0 30px">Default wishlist</h2>
+        <a href="#" class="return-shop"><i class="fa-solid fa-angle-left" style="margin-right: 10px;"></i>RETURN TO SHOP</a>
+    </div>
+
+    <my-footer></my-footer>
+    <script src="footer.js"></script>
+    <script  src="header.js"></script>
+    <script src="headerjs.js"></script>
+</body>
+</html>

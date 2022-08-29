@@ -1,0 +1,692 @@
+:root{
+  --ash-color: #777777;
+  --orange-color: #FB5D5C;
+  --background-color: #323232;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.top-bg{
+  border-bottom: 1px solid #e9e4e4;
+  height: 40px;
+  transition: 0.5s ease;
+}
+.top-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--ash-color);
+  margin: 0 13%;
+  height: 100%;
+}
+.top-side{
+  display: flex;
+  flex-wrap: wrap;
+}
+.top-side-dropdown{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 15px;
+}
+.top-side-dropdown:nth-child(2){
+  position: relative;
+}
+.top-side-dropdown:nth-child(2)::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: var(--ash-color);
+}
+.top-side-dropdown:nth-child(2)::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: var(--ash-color);
+}
+.top-side-dropdown:nth-child(3) a{
+  color: var(--ash-color);
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.top-side-dropdown:nth-child(3) a:hover{
+  color: var(--orange-color);
+}
+.top-side-dropbtn{
+  cursor: pointer;
+  transition: 0.5s ease;
+  position: relative;
+}
+.top-side-dropbtn::before{
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid var(--orange-color);
+  position: absolute;
+  top: 130%;
+  left: 60%;
+  display: none;
+  transition: 0.5s ease;
+}
+.top-down-arrow{
+  width: 12px;
+  height: 12px;
+  fill: var(--ash-color);
+  transition: 0.5s ease;
+}
+.top-side-dropbtn:hover .top-down-arrow{
+  fill: var(--orange-color);
+}
+.top-side-dropdown-content{
+  position: absolute;
+  background-color: white;
+  display: none;
+  box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.2);
+  top: 100%;
+  width: 80px;
+  padding: 10px;
+  border-top: 3px solid var(--orange-color);
+  border-radius: 5px;
+  z-index: 1;
+}
+.top-side-dropdown-content a{
+  text-decoration: none;
+  color: var(--ash-color);
+  display: inline-block;
+  padding: 4px 5px;
+  width: 80%;
+  transition: 0.5s ease;
+  font-size: 13px;
+}
+.top-side-dropdown-content a:hover, .top-side-dropbtn:hover{
+  color: var(--orange-color);
+}
+.top-side-dropdown:hover .top-side-dropdown-content, .top-side-dropdown:hover .top-side-dropbtn::before{
+  display: inline-block;
+  perspective: 1000px;
+  animation: animate 300ms ease-in-out forwards;
+}
+@keyframes animate{
+  0%{
+     transform: rotateY(-90deg);
+  }50%{
+     transform: rotateY(20deg);
+  }100%{
+    transform: rotateY(0deg);
+  }
+}
+
+
+/**************************top modal start********************************/
+#modal-bg, #modal-signup-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-login, .modal-signup{
+  background-color: white;
+  width: 30%;
+  height: 65%;
+  border-radius: 5px;
+  padding: 25px;
+  color: var(--ash-color);
+  text-align: center;
+  position: relative;
+  transition: 0.5s ease-in;
+}
+@keyframes modal-jump{
+  0%{
+    transform: translateY(-25%);
+  }50%{
+    transform: translateY(12%);
+  }100%{
+    transform: translateY(0%);
+  }
+}
+.modal-login h1, .modal-signup h1{
+    font-size: 26px;
+    line-height: 1.2;
+    color: #323232;
+    margin: 16px 0 10px;
+    text-align: center;
+}
+.modal-form{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-control{
+  position: relative;
+  margin: 10px auto 20px;
+  width: 70%;
+}
+.form-control input{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px var(--ash-color) solid;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  color: var(--ash-color);
+}
+.form-control input:focus,
+.form-control input:valid{
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+.form-control label{
+  position: absolute;
+  top: 13px;
+  left: 0;
+}
+.form-control label span{
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+  color: lightblue;
+  transform: translateY(-20px);
+  font-size: 13px;
+}
+.form-ckeckbox{
+  display: flex;
+  margin: 25px 15%;
+}
+.form-ckeckbox input{
+  width: 15px;
+  height: 15px;
+}
+.form-ckeckbox p{
+  margin-left: 10px;
+}
+.modal-form button{
+  width: 70%;
+  border: none;
+  padding: 13px 0;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: var(--background-color);
+  color: #e9e4e4;
+  transition: 0.5s ease;
+  display: block;
+  margin: 0 auto 6px;
+  border-radius: 2px;
+}
+.modal-form button:hover{
+  background-color: var(--orange-color);
+}
+.forget-pass{
+  text-decoration: none;
+  color: var(--ash-color);
+  transition: 0.4s ease-in;
+  font-size: 15px;
+}
+.forget-pass:hover{
+  color: var(--orange-color);
+}
+.not-a-member{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.not-a-member p{
+  margin: 10px 25px ;
+  font-size: 17px;
+}
+.not-a-member button{
+  border: none;
+  padding: 13px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: var(--background-color);
+  color: #e9e4e4;
+  transition: 0.5s ease;
+  border-radius: 2px;
+}
+.not-a-member button:hover{
+  background-color: var(--orange-color);
+}
+.modal-cross{
+  width: 20px; 
+  height: 20px;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  cursor: pointer;
+  fill: var(--ash-color);
+  transition: 0.3s ease;
+}
+.modal-cross:hover{
+  fill: var(--background-color);
+}
+
+/***************************Logo and search bar starts from here*****************************************************/
+.logo-search-part-bg{
+  height: 100px;
+  transition: 0.5s ease;
+}
+.logo-search-part-main{
+  display: grid;
+  grid-template: 
+   'l l l tsb tsb tsb tsb tsb tsb . tsbi tsbi'
+  ;
+  margin: 0 13%;
+  height: 100%;
+  align-items: center;
+  border-bottom: 1px solid #e9e4e4;;
+}
+.top-search-bar-icons{
+  grid-area: tsbi;
+  display: flex;
+}
+.top-search-bar-icon-container{
+  position: relative;
+  margin: 0 7px;
+}
+.top-search-bar-icon-container::before{
+  content: '0';
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 13px;
+  position: absolute;
+  top: -16px;
+  right: -2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--orange-color);
+}
+.top-search-bar-icon{
+  width: 20px;
+  height: 20px;
+  fill: var(--ash-color);
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 0 6px;
+}
+.top-barger-menu{
+  margin-left: 25px;
+  display: none;
+}
+
+.top-search-bar-icon:hover{
+  fill: var(--orange-color);
+}
+.logo{
+  position: relative;
+  grid-area: l;
+}
+.logo::before{
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 48px;
+  width: 15px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--orange-color);
+  z-index: -1;
+}
+.logo h1{
+  font-size: 50px;
+}
+.top-search-bar{
+  grid-area: tsb;
+}
+form.top-search-bar input{
+  padding: 10px 15px;
+  font-size: 17px;
+  border: 1px solid #dddddd;
+  float: left;
+  width: 70%;
+  color: var(--ash-color);
+  transition: 0.3s ease;
+  border-right: 1px solid transparent;
+}
+form.top-search-bar input:focus{
+  outline: none;
+  border-color: #b8b6b6;
+  border-right: 1px solid transparent;
+}
+form.top-search-bar button{
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: var(--orange-color);
+  color: white;
+  font-size: 17px;
+  border: 1px solid var(--orange-color);
+  border-left: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+form.top-search-bar button:hover{
+  background-color: var(--background-color);
+  border-color: var(--background-color);
+}
+
+/******************************Nav bar for big screen*************************************************/
+.top-nav-bg{
+  width: 100%;
+  border-bottom:  1px solid #e9e4e4;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+.top-nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 13%;
+  height: 80px;
+}
+.top-nav ul{
+  display: flex;
+  list-style-type: none;
+  height: 100%;
+}
+.top-nav ul li{
+  margin: 0 30px 0 0;
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.top-nav ul li a{
+  text-decoration: none;
+  color: var(--background-color);
+  font-size: 17px;
+  font-weight: 500;
+  padding: 3px;
+  transition: 0.3s ease;
+}
+.top-nav ul li a:hover{
+  color: var(--orange-color);
+  border-bottom: 2px solid var(--orange-color);
+}
+.top-nav ul li a:hover .top-nav-down-arrow{
+  fill: var(--orange-color);
+}
+
+.top-nav ul li a.active{
+  border-bottom: 2px solid var(--orange-color);
+}
+.top-nav-down-arrow{
+  width: 12px;
+  height: 12px;
+  transition: 0.3s ease;
+}
+.top-nav-dropdown{
+  position: absolute;
+  padding: 30px;
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  top: 100%;
+  display: none;
+  border-top: 3px solid var(--orange-color);
+  width: 170px;
+  background-color: white;
+}
+.top-nav-dropdown::before{
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid var(--orange-color);
+}
+.top-nav ul li:hover .top-nav-dropdown{
+  display: block;
+  animation: top-nav-ani 500ms ease-in-out forwards;
+}
+@keyframes top-nav-ani{
+  0%{
+     transform: rotateY(-90deg);
+  }50%{
+     transform: rotateY(20deg);
+  }100%{
+    transform: rotateY(0deg);
+  }
+}
+.top-nav-dropdown a.top-nav-dropdown-link{
+  display: block;
+  line-height: 40px;
+  color: var(--ash-color);
+  font-size: 17px;
+}
+.top-nav-dropdown a.top-nav-dropdown-link:hover{
+  border-bottom: none;
+}
+.top-nav-support{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.support-icon-headphone{
+  width: 23px;
+  height: 23px;
+  fill: var(--orange-color);
+}
+.support-number{
+  margin-left: 17px;
+  line-height: 25px;
+}
+.support-number p:nth-child(1){
+  color: var(--ash-color);
+  font-size: 17px;
+}
+.support-number p:nth-child(2){
+  color: var(--background-color);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/********************************Side nav bar starts from here***************************************************/
+
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.sidenav .closebtn {
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  padding: 1px 3px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.mySidenavTop{
+  width: 100%;
+  height: 60px;
+  background-color: var(--orange-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+.mySidenave-searchbar{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.mySidenave-searchbar input{
+  padding: 8px;
+  width: 80%;
+  border: 1px solid rgb(223, 220, 220);
+}
+.mySidenave-searchbar input:focus{
+  outline: 0;
+}
+.mySidenav-icon{
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: 13%;
+  cursor: pointer;
+}
+.mobile-menu-categories{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-menu.active{
+  background-color: var(--orange-color);
+  margin-right: 5px;
+}
+.mobile-menu.active:hover{
+  color: white;
+}
+.mobile-menu{
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #dbd7d7;
+  transition: 0.4s ease;
+}
+.mobile-menu:hover{
+  color: #f14e42c7;
+}
+.mobile-side-submenu{
+  margin: 10%;
+  display: block;
+}
+.category-side-submenu{
+  display: none;
+  margin: 10%;
+}
+.mobile-side-submenu ul, .category-side-submenu ul{
+  list-style-type: none;
+}
+.mobile-side-submenu ul li, .category-side-submenu li{
+  line-height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-side-submenu ul li.active, .category-side-submenu ul li.active,
+.mobile-side-submenu ul li:hover, .category-side-submenu ul li:hover,
+.mobile-side-submenu ul li a:hover, .category-side-submenu ul li a:hover{
+  color: var(--orange-color);
+}
+.mobile-side-submenu ul li a, .category-side-submenu ul li a{
+  text-decoration: none;
+  color: black;
+}
+.sub-minus{
+  font-size: 25px;
+  display: none;
+}
+.mobile-subdropdown, .category-subdropdown{
+  display: none;
+  transition: 0.5s ease;
+}
+.mobile-subdropdown.active, .category-subdropdown.active{
+  display: block;
+} 
+.mobile-subdropdown li, .category-subdropdown li{
+   margin-left: 20px;
+}
+/**************************Media query starts from here********************************/
+@media only screen and (max-width: 900px){
+  .modal-login, .modal-signup{
+    width: 50%;
+  }
+  .modal-login, .modal-signup{
+    height: 80%;
+  }
+  .top-nav ul li{
+    margin: 0 5px 0 0;
+  }
+} 
+
+@media only screen and (max-width: 800px) {
+  .top-main p{
+    display: none;
+  }
+  .logo-search-part-main{
+    grid-template: 
+     'l l l l l l  . tsbi tsbi tsbi tsbi tsbi'
+     'tsb tsb tsb tsb tsb tsb tsb tsb tsb tsb tsb tsb'
+    ;
+    padding: 10px 0;
+    margin: 0 3%;
+  }
+  .top-search-bar{
+     background-color: var(--background-color);
+     padding: 2%;
+     margin: 10px 0;
+  }
+  .top-barger-menu{
+    display: block;
+  }
+  .top-nav-bg{
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .top-bg{
+    height: 80px;
+  }
+  .top-side-dropdown:nth-child(1), .top-side-dropdown:nth-child(2), .top-side-dropdown:nth-child(3){
+    margin: 0 auto;
+  }
+  .top-main{
+    margin: 0 2%;
+  }
+  .modal-login, .modal-signup{
+      width: 80%;
+  } 
+  form.top-search-bar input{
+    font-size: 10px;
+    width: 60%;
+  }
+  form.top-search-bar button{
+      font-size: 10px;
+  }
+
+}

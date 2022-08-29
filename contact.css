@@ -1,0 +1,103 @@
+.contact-map-container{
+    width: 100%;
+}
+
+.contact-map-main{
+    margin: 100px 13%;
+}
+.contact-form-main h1{
+    color: var(--background-color);
+    font-size: 35px;
+}
+.contact-form-main p{
+    color: var(--ash-color);
+    margin: 10px 0;
+}
+.contact-form-section{
+    display: flex;
+    margin-top: 100px;
+}
+.contact-form-main{
+    width: 60%;
+    margin-right: 10px;
+}
+.contact-form-img{
+    width: 40%;
+}
+.contact-input-form{
+    margin-top: 40px;
+    width: 100%;
+}
+.input-box{
+    padding: 20px;
+    border: 1px solid rgb(228, 227, 227);
+}
+.input-box:focus, #contact-msg:focus{
+    outline: none;
+}
+.name-email{
+    width: 40%;
+    display: inline-block;
+}
+.contact-form-img img{
+    width: 100%;
+}
+#subject, #contact-msg{
+   display: block;
+   margin-top: 15px;
+}
+#contact-msg{
+    width: 87%;
+    height: 300px;
+    border: 1px solid rgb(228, 227, 227);
+    padding: 20px;
+    font-family:"Times New Roman", Times, serif; 
+    font-size: 16px;
+    resize: none;
+}
+#subject{
+    width: 87%;
+}
+
+.send-msg{
+    color: white;
+    background-color: var(--background-color);
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+.send-msg:hover{
+    background-color: var(--orange-color);
+}
+
+@media only screen and (max-width: 1000px){
+    .name-email{
+        margin: 10px 0;
+        width: 87%;
+    }
+    .contact-map-main{
+        margin: 100px 4%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .contact-map-main{
+        margin: 80px 3%;
+    }
+    .contact-form-section{
+        flex-direction: column;
+    }
+    .contact-form-main{
+        width: 100%;
+    }
+    .contact-form-img{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
